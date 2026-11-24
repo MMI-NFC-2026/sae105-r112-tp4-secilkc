@@ -1,9 +1,26 @@
 /**
 * Accordeon
 */
+.accordeon {
+  max-width: 600px;
+  margin: 2rem auto;
+}
 
-.accordeon { max-width: 600px; margin: 2rem auto; }
-.accordeon > details { border: 1px solid #ccc; margin-bottom: 0.5rem; }
-.accordeon > details > summary { cursor: pointer; }
-.accordeon > details > summary img { display: block; width: 100%; height: auto; }
-.accordeon > details > div { padding: 1rem; }
+.accordeon > details {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.accordeon > details > summary {
+  cursor: pointer;
+}
+
+.accordeon > details > summary img {
+  display: block;
+  max-width: 100%; 
+  height: auto;
+}
+
+.accordeon > details > div {
+  padding: 1rem;
+}
