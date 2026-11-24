@@ -33,3 +33,13 @@
 .accordeon > details[open] > summary {
   border-bottom: 1px solid #c00;
 }
+
+.accordeon > details > summary {
+  list-style: none;
+  position: relative; /* servira pour placer le triangle à l'étape 4b */
+}
+
+.accordeon > details > summary::marker,
+.accordeon > details > summary::-webkit-details-marker {
+  display: none;
+}
