@@ -55,3 +55,12 @@
   border: 10px solid transparent;
   border-left: 14px solid red;
 }
+
+.accordeon > details > summary::before {
+  transform-origin: 30% 50%;
+  transition: transform 0.3s;
+}
+
+.accordeon > details[open] > summary::before {
+  transform: rotate(90deg);
+}
