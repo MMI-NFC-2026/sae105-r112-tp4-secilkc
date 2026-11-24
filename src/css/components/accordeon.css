@@ -43,3 +43,15 @@
 .accordeon > details > summary::-webkit-details-marker {
   display: none;
 }
+
+.accordeon > details > summary::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  translate: 0 -50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 14px solid red;
+}
