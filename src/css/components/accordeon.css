@@ -24,3 +24,12 @@
 .accordeon > details > div {
   padding: 1rem;
 }
+
+.accordeon > details[open] {
+  border-color: #c00;
+  background: #fff6f6;
+}
+
+.accordeon > details[open] > summary {
+  border-bottom: 1px solid #c00;
+}
