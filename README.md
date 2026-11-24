@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : AKCA
+- prénom : Seçil
+- URL Netlify : https://whimsical-croquembouche-0c56cf.netlify.app
 
 # Travail
 

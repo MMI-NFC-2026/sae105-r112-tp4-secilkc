@@ -1,3 +1,66 @@
 /**
 * Accordeon
 */
+.accordeon {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordeon > details {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.accordeon > details > summary {
+  cursor: pointer;
+}
+
+.accordeon > details > summary img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.accordeon > details > div {
+  padding: 1rem;
+}
+
+.accordeon > details[open] {
+  border-color: #c00;
+  background: #fff6f6;
+}
+
+.accordeon > details[open] > summary {
+  border-bottom: 1px solid #c00;
+}
+
+.accordeon > details > summary {
+  list-style: none;
+  position: relative; /* servira pour placer le triangle à l'étape 4b */
+}
+
+.accordeon > details > summary::marker,
+.accordeon > details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordeon > details > summary::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  translate: 0 -50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 14px solid red;
+}
+
+.accordeon > details > summary::before {
+  transform-origin: 30% 50%;
+  transition: transform 0.3s;
+}
+
+.accordeon > details[open] > summary::before {
+  transform: rotate(90deg);
+}
